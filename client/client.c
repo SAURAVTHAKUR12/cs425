@@ -21,7 +21,7 @@ int main(int argc, char *argv[]){
   memset(serverAddr.sin_zero, '\0', sizeof serverAddr.sin_zero);  
   addr_size = sizeof serverAddr;
   connect(clientSocket, (struct sockaddr *) &serverAddr, addr_size);
-  //interaction between server and client
+  //interaction between server and client test 1
   send(clientSocket,usr,sizeof(usr),0);
   bzero(buffer,1024);
   recv(clientSocket,buffer,1024,0);
